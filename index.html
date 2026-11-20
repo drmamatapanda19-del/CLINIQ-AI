@@ -218,7 +218,7 @@ html.dark .search{background:#101b30;color:#e3eaf5}
     <div class="wrap">
       <p class="kicker">A digital learning initiative &nbsp;&bull;&nbsp; Part of the AI Literacy Mission</p>
       <h1>CLINIQ <span class="ai">AI</span></h1>
-      <p class="lead">Simple, evidence-based AI education for healthcare professionals. Fifty-two short chapters, <span id="heroEvery">released every other Friday</span>.</p>
+      <p class="lead">Simple, evidence-based AI education for healthcare professionals. Fifty-two short chapters, <span id="heroEvery">released every Friday</span>.</p>
       <div class="cta">
         <a class="btn primary" id="startBtn" href="#chapter-1">Start with Chapter 1</a>
         <a class="btn ghost" href="#chapters">Browse all chapters</a>
@@ -237,7 +237,7 @@ html.dark .search{background:#101b30;color:#e3eaf5}
     <div class="wrap">
       <div class="resume" id="resume"><span>Welcome back.</span><a id="resumeGo"></a><button id="resumeX" aria-label="Dismiss">&times;</button></div>
       <h2 class="title">Latest chapter</h2>
-      <p class="sub" id="relNote">A new chapter opens every  Friday.</p>
+      <p class="sub" id="relNote">A new chapter opens every Friday.</p>
       <div class="card latest" id="latestCard"></div>
     </div>
   </section>
@@ -314,7 +314,7 @@ html.dark .search{background:#101b30;color:#e3eaf5}
 
 <!-- ================= CHAPTER INDEX ================= -->
 <div class="view hidden" id="listView">
-  <div class="page-head"><div class="wrap"><h1>All chapters</h1><p id="listNote">52 chapters in four quarters. New chapters open every other Friday.</p></div></div>
+  <div class="page-head"><div class="wrap"><h1>All chapters</h1><p id="listNote">52 chapters in four quarters. New chapters open every Friday.</p></div></div>
   <section class="section"><div class="wrap">
     <input class="search" id="search" type="search" placeholder="Search chapters, for example hallucination" aria-label="Search chapters">
     <div id="allList"></div>
@@ -415,11 +415,11 @@ html.dark .search{background:#101b30;color:#e3eaf5}
 (function(){
   // ===== RELEASE SCHEDULE (edit here) =====
   // Chapter 1 opens on START_DATE (a Friday) at RELEASE_TIME India time.
-  // Each later chapter opens INTERVAL_DAYS after the one before it (14 = every other Friday, 7 = every Friday).
+  // Each later chapter opens INTERVAL_DAYS after the one before it (7 = every Friday, 14 = every other Friday).
   var START_DATE = '2026-11-20';
-  var INTERVAL_DAYS = 14;
-  // Time of day, India time (HH:MM, 24-hour), at which each chapter opens. '00:20' means 12:20 am.
-  var RELEASE_TIME = '00:20';
+  var INTERVAL_DAYS = 7;
+  // Time of day, India time (HH:MM, 24-hour), at which each chapter opens. '09:15' means 9:15 am, '00:20' means 12:20 am.
+  var RELEASE_TIME = '09:15';
   // To override the schedule, replace null with a number from 0 to 52 (for example 26).
   var MANUAL_RELEASED_UP_TO = null;
   // ========================================
